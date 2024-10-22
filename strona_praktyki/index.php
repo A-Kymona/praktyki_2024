@@ -48,21 +48,11 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="pliki.html">Przepisy do pobrania</a>
             </li>
-            <?php
-            session_start();
-            if (isset($_SESSION['logon']) && $_SESSION['logon'] == true) {
-            echo'
+        
             <li class="nav-item">
-                <a class="nav-link active" style="background-color:green;" href="panel.php">Zalogowano</a>
+                <a class="nav-link active" style="background-color:lightgray; color: blue;"  href="form.html" >Zaloguj się</a>
             </li>';
-            } 
-            else {
-            echo'
-            <li class="nav-item">
-                <a class="nav-link active" style="background-color:lightgray; color: blue;" href="logowanie.php">Zaloguj się</a>
-            </li>';
-            }
-            ?>
+            
         </ul>
     </div> <br />
     
