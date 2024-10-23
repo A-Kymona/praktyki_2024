@@ -1,0 +1,15 @@
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.AssemblyInfoInputs.cache
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.AssemblyInfo.cs
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.csproj.CoreCompileInputs.cache
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.sourcelink.json
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\bin\Debug\net8.0\zad_2.exe
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\bin\Debug\net8.0\zad_2.deps.json
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\bin\Debug\net8.0\zad_2.runtimeconfig.json
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\bin\Debug\net8.0\zad_2.dll
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\bin\Debug\net8.0\zad_2.pdb
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.dll
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\refint\zad_2.dll
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.pdb
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\zad_2.genruntimeconfig.cache
+C:\Users\Antek\OneDrive\Pulpit\praktyki\praktyki_2024\Zadania_c#\zad_2\obj\Debug\net8.0\ref\zad_2.dll
