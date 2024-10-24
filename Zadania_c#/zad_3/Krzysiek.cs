@@ -9,7 +9,7 @@
         Console.Write("\nPodaj drugą liczbę: ");
         liczba2 = double.Parse(Console.ReadLine());
 
-        suma = liczba2 + liczba1;
+        var suma = liczba2 + liczba1;
         
         roznica2 = liczba1 - liczba2; 
 
