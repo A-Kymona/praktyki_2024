@@ -11,5 +11,6 @@
             else { Console.WriteLine($"\nLiczba {liczba} jest ujemna"); }
         }
         else { Console.WriteLine($"\nLiczba {liczba} nie jest ani dodatnia ani ujemna"); }
+        Console.ReadLine());
     }
 }

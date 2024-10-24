@@ -38,5 +38,6 @@
         {
             Console.WriteLine("\nNie można dzielić przez 0.");
         }
+        Console.ReadLine());
     }
 }

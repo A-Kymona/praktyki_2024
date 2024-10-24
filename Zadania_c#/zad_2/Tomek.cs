@@ -22,6 +22,6 @@ internal class Tomek
         {
             Console.WriteLine("\nSuma trzech podanych przez Ciebie liczb wynosi " + suma + ". I nie jest podzielna przez 3");
         }
-
-        }
+        Console.ReadLine());
     }
+}
