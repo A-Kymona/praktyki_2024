@@ -9,6 +9,7 @@ namespace zad_1
         {
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("Podaj tekst:");
                 string inputText = Console.ReadLine();
 
@@ -77,6 +78,7 @@ namespace zad_1
                     Console.Clear();
                     break; 
                 }
+                
             }
 
             Console.WriteLine("Dziękuję za skorzystanie z programu.");
