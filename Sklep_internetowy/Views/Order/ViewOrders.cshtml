@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Sklep_internetowy.Models.Order>
+@{
+    ViewData["Title"] = "Moje zamówienia";
+}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID zamówienia</th>
+            <th>Data zamówienia</th>
+            <th>Łączna kwota</th>
+            <th>Zamówione pozycje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.Czas_zamowienia.ToString("MM/dd/yyyy")</td>
+                <td>@order.Kwota_zamowienia.ToString("C")</td>
+                <td>
+                    <ul>
+                        @foreach (var item in order.Zamowiony_przedmiot)
+                        {
+                            <li>@item.Produkt.Nazwa - @item.Quantity x @item.Cena.ToString("C")</li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

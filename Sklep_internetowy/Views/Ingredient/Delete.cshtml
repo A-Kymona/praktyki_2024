@@ -1,0 +1,13 @@
+﻿@model Ingredient
+@{
+    ViewBag.Title = $"Usuń {Model.Nazwa} Składnik";
+}
+<h3>Czy na pewno chcesz to usunąć?</h3>
+<div>
+    <h4>@Model.Nazwa</h4>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="IngredientId" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-default">Wróć do listy</a>
+    </form>
+</div>

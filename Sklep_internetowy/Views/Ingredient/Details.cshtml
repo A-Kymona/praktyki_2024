@@ -1,0 +1,32 @@
+﻿@model Ingredient
+@{
+    ViewBag.Title = "Szczegóły składnka";
+}
+<h1>@Model.Nazwa Details</h1>
+
+@if (Model.skladniki_zamowienia != null && Model.skladniki_zamowienia.Any())
+{
+    <h4>Produkty</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nazwa produktu</th>
+                <th>Opis</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var productIngredient in Model.skladniki_zamowienia)
+            {
+                <tr>
+                    <td>@productIngredient.Product.Nazwa</td>
+                    <td>@productIngredient.Product.Opis</td>
+                    <td>@productIngredient.Product.Cena</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<div>
+    <a asp-action="Index">Wróć do listy</a>
+</div>

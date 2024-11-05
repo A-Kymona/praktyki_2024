@@ -1,0 +1,37 @@
+﻿@model OrderViewModel
+<h1>Mój koszyk</h1>
+
+<!--Form to finalize and create the order-->
+<form asp-action="PlaceOrder" method="post">
+    <h3>Zamówione produkty</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Ilość</th>
+                <th>Cena</th>
+                <th>Łącznie</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Zamowione_produkty.Count; i++)
+            {
+                <tr>
+                    <td>@Model.Zamowione_produkty[i].Nazwa_produktu</td>
+                    <td>@Model.Zamowione_produkty[i].Ilosc</td>
+                    <td>@Model.Zamowione_produkty[i].Cena</td>
+                    <td></td>
+                </tr>
+            }
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-primary bg-gradient text-white fw-bold">@Model.Kwota_całkowita.ToString("C")</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form-group">
+        <input type="submit" value="Place Order" class="btn btn-primary" />
+    </div>
+</form>
