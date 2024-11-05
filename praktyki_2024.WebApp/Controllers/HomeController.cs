@@ -18,6 +18,11 @@ namespace praktyki_2024.WebApp.Controllers
             return View();
         }
 
+        public IActionResult samochod() 
+        { 
+            var model = new samochod()
+            return View(); 
+        }
         public IActionResult Privacy()
         {
             return View();
