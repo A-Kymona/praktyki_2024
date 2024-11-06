@@ -40,7 +40,7 @@ namespace Sklep_internetowy.Controllers
             {
                 Product product = await products.GetByIdAsync(id, new QueryOptions<Product>
                 {
-                    Includes = "ProductIngredients.Ingredient, Category"
+                    Includes = "ProductIngredients.Ingredient, Kategoria"
                 });
                 ViewBag.Operation = "Edytuj";
                 return View(product);
