@@ -4,7 +4,7 @@
     {
         public int ProduktId { get; set; }
         public Product Product { get; set; }
-        public int Id_skladnik { get; set; }
+        public int skladnikId { get; set; }
         public Ingredient Ingredient { get; set; }
     }
 }

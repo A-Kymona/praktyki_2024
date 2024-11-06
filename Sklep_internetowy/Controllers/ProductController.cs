@@ -73,7 +73,7 @@ namespace Sklep_internetowy.Controllers
                     //add ingredients
                     foreach (int id in ingredientIds)
                     {
-                        product.ProductIngredients?.Add(new ProductIngredient { Id_skladnik = id, ProduktId = product.ProductId });
+                        product.ProductIngredients?.Add(new ProductIngredient { skladnikId = id, ProduktId = product.ProductId });
                     }
 
                     await products.AddAsync(product);
@@ -101,7 +101,7 @@ namespace Sklep_internetowy.Controllers
                     existingProduct.ProductIngredients?.Clear();
                     foreach (int id in ingredientIds)
                     {
-                        existingProduct.ProductIngredients?.Add(new ProductIngredient { Id_skladnik = id, ProduktId = product.ProductId });
+                        existingProduct.ProductIngredients?.Add(new ProductIngredient { skladnikId = id, ProduktId = product.ProductId });
                     }
 
                     try

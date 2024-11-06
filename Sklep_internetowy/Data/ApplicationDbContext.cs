@@ -25,7 +25,7 @@ namespace Sklep_internetowy.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<ProductIngredient>()
-                .HasKey(pi => new { pi.ProduktId, pi.Id_skladnik });
+                .HasKey(pi => new { pi.ProduktId, pi.skladnikId });
 
             modelBuilder.Entity<ProductIngredient>()
                 .HasOne(pi => pi.Product)
@@ -35,7 +35,7 @@ namespace Sklep_internetowy.Data
             modelBuilder.Entity<ProductIngredient>()
                 .HasOne(pi => pi.Ingredient)
                 .WithMany(i => i.ProductIngredients)
-                .HasForeignKey(pi => pi.Id_skladnik);
+                .HasForeignKey(pi => pi.skladnikId);
 
             modelBuilder.Entity<Category>().HasData(
                 new Category { CategoryId = 1, Nazwa = "Zakąski" },
@@ -98,28 +98,28 @@ namespace Sklep_internetowy.Data
 
             modelBuilder.Entity<ProductIngredient>().HasData(
                 //Taco z wołowiną
-                new ProductIngredient {ProduktId =1, Id_skladnik=1},
-                new ProductIngredient { ProduktId = 1, Id_skladnik = 4 },
-                new ProductIngredient { ProduktId = 1, Id_skladnik = 5 },
-                new ProductIngredient { ProduktId = 1, Id_skladnik = 6 },
+                new ProductIngredient {ProduktId =1, skladnikId=1},
+                new ProductIngredient { ProduktId = 1, skladnikId = 4 },
+                new ProductIngredient { ProduktId = 1, skladnikId = 5 },
+                new ProductIngredient { ProduktId = 1, skladnikId = 6 },
 
                 //Taco z kurczakiem
-                new ProductIngredient { ProduktId = 2, Id_skladnik = 2 },
-                new ProductIngredient { ProduktId = 2, Id_skladnik = 4 },
-                new ProductIngredient { ProduktId = 2, Id_skladnik = 5 },
-                new ProductIngredient { ProduktId = 2, Id_skladnik = 6 },
+                new ProductIngredient { ProduktId = 2, skladnikId = 2 },
+                new ProductIngredient { ProduktId = 2, skladnikId = 4 },
+                new ProductIngredient { ProduktId = 2, skladnikId = 5 },
+                new ProductIngredient { ProduktId = 2, skladnikId = 6 },
 
                 //Taco z rybą
-                new ProductIngredient { ProduktId = 3, Id_skladnik = 3 },
-                new ProductIngredient { ProduktId = 3, Id_skladnik = 4 },
-                new ProductIngredient { ProduktId = 3, Id_skladnik = 5 },
-                new ProductIngredient { ProduktId = 3, Id_skladnik = 6 },
+                new ProductIngredient { ProduktId = 3, skladnikId = 3 },
+                new ProductIngredient { ProduktId = 3, skladnikId = 4 },
+                new ProductIngredient { ProduktId = 3, skladnikId = 5 },
+                new ProductIngredient { ProduktId = 3, skladnikId = 6 },
 
-                new ProductIngredient { ProduktId = 4, Id_skladnik = 1 },
-                new ProductIngredient { ProduktId = 4, Id_skladnik = 5 },
-                new ProductIngredient { ProduktId = 4, Id_skladnik = 6 },
-                new ProductIngredient { ProduktId = 4, Id_skladnik = 7 },
-                new ProductIngredient { ProduktId = 4, Id_skladnik = 8 }
+                new ProductIngredient { ProduktId = 4, skladnikId = 1 },
+                new ProductIngredient { ProduktId = 4, skladnikId = 5 },
+                new ProductIngredient { ProduktId = 4, skladnikId = 6 },
+                new ProductIngredient { ProduktId = 4, skladnikId = 7 },
+                new ProductIngredient { ProduktId = 4, skladnikId = 8 }
 
                 );
         }
