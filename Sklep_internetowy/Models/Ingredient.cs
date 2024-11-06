@@ -8,6 +8,6 @@ namespace Sklep_internetowy.Models
         public string Nazwa { get; set; }
 
         [ValidateNever]
-        public ICollection<ProductIngredient> skladniki_zamowienia { get; set; }
+        public ICollection<ProductIngredient> ProductIngredients { get; set; }
     }
 }

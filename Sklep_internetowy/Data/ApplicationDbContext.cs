@@ -17,7 +17,7 @@ namespace Sklep_internetowy.Data
         public DbSet<Order> Zamowienia { get; set; }
         public DbSet<OrderItem> PrzedmiotZamowienia { get; set; }
         public DbSet<Ingredient> Skladniki { get; set; }
-        public DbSet<ProductIngredient> Skladniki_Zamowienia { get; set; }
+        public DbSet<ProductIngredient> ProductIngredients { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -34,7 +34,7 @@ namespace Sklep_internetowy.Data
 
             modelBuilder.Entity<ProductIngredient>()
                 .HasOne(pi => pi.Ingredient)
-                .WithMany(i => i.skladniki_zamowienia)
+                .WithMany(i => i.ProductIngredients)
                 .HasForeignKey(pi => pi.Id_skladnik);
 
             modelBuilder.Entity<Category>().HasData(

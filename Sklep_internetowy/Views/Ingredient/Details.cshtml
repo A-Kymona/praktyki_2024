@@ -4,7 +4,10 @@
 }
 <h1>@Model.Nazwa Details</h1>
 
-@if (Model.skladniki_zamowienia != null && Model.skladniki_zamowienia.Any())
+@if (Model.ProductIngredients != null && Model.ProductIngredients.Any())
+
+
+
 {
     <h4>Produkty</h4>
     <table class="table">
@@ -16,7 +19,8 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var productIngredient in Model.skladniki_zamowienia)
+            @foreach (var productIngredient in Model.ProductIngredients)
+
             {
                 <tr>
                     <td>@productIngredient.Product.Nazwa</td>
