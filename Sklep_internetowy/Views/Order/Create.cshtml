@@ -8,16 +8,17 @@
 
 <div class="row">
     @foreach (Product product in @Model.Produkty)
+
     {
         <div class="col-md-4">
             <form asp-action="AddItem" method="post">
                 <div class="card" style="width: 18rem;">
                     <img src="@Url.Content("~/images/" + product?.Url_zdj)" class="card-img-top fixed-image-height" alt="@product.Opis">
                     <div class="card-body">
-                        @product.Nazwa - @product.Cena.ToString("C")
+                        <p>@product.Nazwa - @product.Cena.ToString("C")</p>
                         <input type="hidden" value="@product.ProductId" name="prodId" />
-                        <input type="number" name="prodQty" class="form-control" />
-                        <button class="btn btn-info" type="submit">Add</button>
+                        <input type="number" name="prodQty" class="form-control" min="1"  />
+                        <button class="btn btn-info" type="submit">Dodaj</button>
                     </div>
                 </div>
             </form>

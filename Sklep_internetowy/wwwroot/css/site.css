@@ -18,5 +18,16 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('images/tlo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+.fixed-image-height {
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%; /* Ensures the image takes the full width of the container */
 }
